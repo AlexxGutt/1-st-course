@@ -1,0 +1,264 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70px;
+    max-width: 729px;
+}
+h2 {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 59px;
+}
+// Стили блока "Header"
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 17.5px 0px 17.5px 0px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+    &__input {
+        max-width: 288px;
+        height: 41px;
+        background-color: transparent;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        outline: none;
+        padding: 10.5px 187px 10.5px 32px;
+        &::placeholder {
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    
+}
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+    &__link {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.menu-mobile {
+    display: none;
+}
+// Стили блока "Header"
+// Стили карточки товара "product"
+.special-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+} 
+// --специальное предложение--
+.product {
+    width: 379px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    &:hover .product-icons {
+        opacity: 1;
+    }
+    &__title {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        margin-top: 10px;
+    }
+    &__desc {
+        color: rgb(136, 136, 136);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        margin-top: 9px;
+    }
+}
+.product-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    opacity: 0;
+}
+.product-price {
+    display: flex;
+    gap: 32px;
+    margin-top: 12px;
+    &__cost {
+        color: rgb(5, 5, 5);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        &_sale {
+            color: rgb(136, 136, 136);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29px;
+            text-decoration-line: line-through;
+        }
+    }
+}
+// Стили карточки товара "product"
+// Стили блока "footer"
+.down {
+    background-image: url(img/footback.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+.content-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 196px;
+}
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    &__text {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+    }
+    &__link {
+        color: rgb(136, 136, 136);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+.info-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 129px;
+}
+.item-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+    &__text {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+    }
+    &__link {
+        color: rgb(136, 136, 136);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__block-img {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-bottom: 37px;
+        justify-content: center;
+    }
+    &__icons {
+        &:hover path {
+            fill: black;
+        }
+    }
+}
+.form-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    gap: 8px;
+    &__text {
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        margin-bottom: 8px;
+    }
+    &__input {
+        color: rgb(196, 196, 196);
+        box-sizing: border-box;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 16px;
+        background: rgb(255, 255, 255);
+        padding-left: 17px;
+        padding-top: 12px;
+        padding-bottom: 13px;
+        width: 260px;
+        &::placeholder {
+            color: rgb(196, 196, 196);
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+        }
+    }
+    &__button {
+        border-radius: 16px;
+        background: rgba(222, 215, 215, 0.41);
+        box-sizing: border-box;
+        padding-top: 12px;
+        padding-left: 85px;
+        padding-bottom: 13px;
+        padding-right: 93px;
+        border-color: transparent;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        width: 260px;
+        &:hover {
+            box-sizing: border-box;
+            border-radius: 16px;
+            background: rgb(0, 0, 0);
+            color: #fff;
+        }
+    }
+}
+// Стили блока "footer"

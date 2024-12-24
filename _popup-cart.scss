@@ -1,0 +1,110 @@
+.cart-position {
+    position: relative;
+    &__popup {
+        position: absolute;
+        right: 0;
+        top: 38px;
+        width: 573px;
+        height: 480px;
+        box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+        background: rgb(255, 255, 255);
+        display: none;
+    }
+    &:hover .cart-position__popup {
+        display: block;
+        z-index: 2;
+    }
+}
+.cart-padding {
+    padding: 40px 48px 40px 48px;
+}
+.popup-product {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.popup-line {
+    border-bottom: 0.5px solid rgb(202, 205, 216);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.popup-input {
+    width: 71px;
+    height: 51px;
+    border-radius: 6px;
+    border-style: none;
+    background: rgb(247, 246, 246);
+    margin-left: 48px;
+}
+.popup-cart {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.popup-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 54px;
+}
+.popup-info {
+    width: 190px;
+    &__title {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    &__price {
+        color: rgb(5, 5, 5);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+}
+.popup-link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    &__style {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        text-decoration-line: underline;
+    }
+}
+.purchase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    margin-top: 24px;
+    &__price {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &__button {
+        background-color: transparent;
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 10px 35px 10px 35px;
+
+    }
+}

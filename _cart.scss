@@ -1,0 +1,263 @@
+
+$color-heading: rgb(255, 255, 255);
+$color-text: black;
+$gap: 32px;
+
+.top-cart {
+    height: 400px;
+    background-image: url(img/header-cart.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title {
+        margin-top: 127px;
+    }
+}
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: $gap;
+}
+
+.cart-button {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 17px;
+    &__style {
+        background-color: transparent;
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        color: $color-text;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        margin-top: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+    &__style:hover {
+        color: $color-heading;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        border-radius: 50px;
+        background: $color-text;
+    }
+}
+.cart-content {
+    grid-column: span 8;
+    &__title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: $color-text;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 64px;
+        margin-bottom: 14px;
+        padding-right: 27px;
+    }
+}
+
+.cart-item {
+    border-top: 0.5px solid rgb(202, 205, 216);
+    padding-top: 25px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cart-info-position {
+    display: flex;
+}
+.cart-info {
+    margin-left: 31px;
+    &__title {
+        margin-bottom: 14px;
+        color: $color-text;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+    }
+    &__desc {
+        margin-bottom: 16px;
+        width: 276px;
+        color: rgb(136, 136, 136);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+    &__price {
+        margin-bottom: 15px;
+        color: $color-text;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+}
+.info-input {
+    height: 51px;
+    width: 71px;
+    border-radius: 6px;
+    background: rgb(247, 246, 246);
+    border-color: transparent;
+}
+.info-input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 210%;
+    letter-spacing: 0px;
+    text-align: center;    
+}
+.info-link {
+    display: flex;
+    gap: 32px;  
+    &__style {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration-line: underline;
+    }
+    &__style:hover {
+        color: rgb(136, 136, 136);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none;
+    }
+}
+.cart-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 64px;
+    border-radius: 20px;
+    background: rgb(247, 246, 246);
+    height: 556px;
+    grid-column: span 4;
+    &__title {
+        margin-top: 42px;
+        margin-bottom: 35px;
+        color: $color-text;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    &__text {
+        margin-top: 64px;
+        color: $color-text;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    &__button {
+        margin-top: 18px;
+        margin-left: 44px;
+        margin-right: 44px;
+        background-color: transparent;
+        border: none;
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        color: $color-text;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 289px;
+    }
+    &__button:hover {
+        border: none;
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        color: $color-heading;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 289px;
+        background-color: $color-text;
+    }
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 42px;
+    margin-left: 27px;
+    &__style {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: transparent;
+        width: 288px;
+        border: none;
+        border-bottom: 1px solid rgb(202, 205, 216);
+        padding-bottom: 2px;
+    }
+    &__style::placeholder {
+        color: $color-text;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+}
+.special-box-cart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+}
+.catalog-cart {
+    margin-top: 32px;
+    &__link {
+        display: block;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: underline;
+        margin-bottom: 65px;
+        &:hover {
+            color: rgb(136, 136, 136);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-decoration: none;
+        }
+    }
+}

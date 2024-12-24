@@ -1,0 +1,111 @@
+@media (max-width: 1200px) {
+    .center {
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
+    }
+    .for-box {
+        &__item {
+            height: 268px;
+        }
+    }
+    .special {
+        &__title {
+            margin-bottom: 32px;
+        }
+    }
+    .special-box {
+        column-gap: 28px;
+        row-gap: 39px;
+    }
+    .product-box {
+        row-gap: 39px;
+    }
+    .footer-logo {
+        display: none;
+    }
+    .content-footer {
+        column-gap: 179px;
+    }
+    .product-box-catalog {
+        row-gap: 30px;
+        column-gap: 28px;
+    }
+    .block-position__content {
+        right: -235px;
+    }
+    .special-box-cart {
+        column-gap: 28px;
+        row-gap: 30px;
+    }
+    .cart {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .cart-button__style {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .content-footer {
+        column-gap: 123px;
+    }
+    .product {
+        width: 345px;
+        &__img {
+            width: 345px;
+        }
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .center {
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    .header {
+        &__input {
+            width: 200px;
+            padding-left: 12px;
+            padding-right: 18px;
+        }
+    }
+    .h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .for-box {
+        gap: 14px;
+        &__item {
+            height: 200px;
+            font-size: 28px;
+            font-weight: 500;
+        }
+    }
+    .special-box {
+        row-gap: 24px;
+    }
+    .product-box {
+        row-gap: 24px;
+    }
+    .product {
+        width: 286px;
+        &__img {
+            width: 286px;
+        }
+    }
+    .content-footer {
+        column-gap: 24px;
+    }
+    .info-footer {
+        gap: 108px;
+    }
+    .block-position {
+        &__content {
+            right: -437px;
+        }
+    }
+}
